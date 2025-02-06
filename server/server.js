@@ -176,7 +176,7 @@ if (!input || typeof input !== 'string') {
 async function processWithGemini(Prompt , input) {
     try {
       const response = await axios({
-        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyCWFTmjf8m7nlCdvrDZ20w1TvBDU7YpJKE`,
+        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key={your-api-key}`,
         method: "post",
         data: {
           contents: [{ parts: [{ text: Prompt + input }] }],
